@@ -42,3 +42,30 @@ CREATE TABLE AchtbanenVanEuropa
     ,CONSTRAINT         PK_AchtbanenVanEuropa_Id    PRIMARY KEY     CLUSTERED(Id)
 ) ENGINE=InnoDB;
 
+-- Step: 03
+-- ***************************************************************
+-- Doel : Vul de tabel AchtbanenVanEuropa met gegevens
+-- ***************************************************************
+-- Versie       Datum           Auteur              Omschrijving
+-- ******       *****           ******              ************
+-- 01           13-11-2024      Jianyu liao         Vulling Achtbanen van 
+--                                                  Europa
+-- ***************************************************************
+
+INSERT INTO AchtbanenVanEuropa
+(
+     Naam
+    ,Pretpark
+    ,Land
+    ,Topsnelheid
+    ,Hoogte
+    ,IsActief
+    ,Opmerking
+    ,DatumAangemaakt
+    ,DatumGewijzigd
+)
+VALUES
+ ('Red Force', 'Ferrari Land', 'Spanje', 180, 112, 1, NULL, SYSDATE(6), SYSDATE(6))
+,('Hyperion', 'Energylandia', 'Polen', 142, 77, 1, NULL, SYSDATE(6), SYSDATE(6))
+,('Shambhala', 'PortAventura Park', 'Spanje', 134, 76, 1, NULL, SYSDATE(6), SYSDATE(6))
+,('Schwur des Kärnan', 'Hansa Park', 'Duitsland', 127, 73, 1, NULL, SYSDATE(6), SYSDATE(6));
